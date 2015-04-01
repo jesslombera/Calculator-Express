@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator App</title>
+</head>
+<body>
+
+	<h1>Here are your answers!</h1>
+
+		<li>Solution: <%= solution %></li>
+
+	<h1>Calculate your problem!</h1>
+		<h2>Add two numbers.</h2>
+		<form action="/add" method="POST">
+			<input type="text" name="number1" placeholder="number">
+			<input type="text" name="number2" placeholder="number">
+			<input type="submit">
+		</form>
+
+		<h2>Subtract two numbers.</h2>
+		<form action="/subtract" method="POST">
+			<input type="text" name="number1" placeholder="number">
+			<input type="text" name="number2" placeholder="number">
+			<input type="submit">
+		</form>
+
+		<h2>Multuply two numbers.</h2>
+		<form action="/multiply" method="POST">
+			<input type="text" name="number1" placeholder="number">
+			<input type="text" name="number2" placeholder="number">
+			<input type="submit">
+		</form>
+		
+		<h2>Divide two numbers.</h2>
+		<form action="/divide" method="POST">
+			<input type="text" name="number1" placeholder="number">
+			<input type="text" name="number2" placeholder="number">
+			<input type="submit">
+		</form>		
+
+</body>
+</html>
